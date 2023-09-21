@@ -12,7 +12,7 @@ def getFilesToCount(allowed_extensions, scripts_folder_path):
     for file_name in files:
         for ext in allowed_extensions:
             if file_name.find(ext) == (len(file_name) - len(ext)):    
-                files_to_count.append("./scripts/" + file_name)
+                files_to_count.append(scripts_folder_path + "/" + file_name)
 
     return files_to_count
 
