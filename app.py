@@ -1,4 +1,5 @@
 import os
+import time
 
 def getFilesToCount(allowed_extensions, scripts_folder_path):
     if not os.path.exists(scripts_folder_path):
@@ -52,8 +53,8 @@ allowed_extensions = None
 scripts_folder_path = None
 
 while cannot_continue:
-    input_extensions = input("Podaj rozszerzenia plików po przecinku dla których chcesz obliczyć LOC: ").replace(" ", "")
-    input_path = input("Podaj scieżkę do pliku ze skryptami: ")
+    input_extensions = input("Enter after the decimal point the file extensions for which you want to calculate LOC: ").replace(" ", "")
+    input_path = input("Enter the path to the folder with the scripts: ")
     
     if len(input_extensions) > 0 and len(input_path) > 0:
         allowed_extensions = input_extensions.split(",")
@@ -64,3 +65,4 @@ while cannot_continue:
 
 
 print(run(allowed_extensions, scripts_folder_path))
+input("Press enter to exit...")
