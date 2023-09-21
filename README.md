@@ -1,0 +1,1 @@
+A simple script to count LOC (Lines of code) for the specified extensions in the specified folder.
