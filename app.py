@@ -57,7 +57,7 @@ while cannot_continue:
         print("Don't leave any blanks.")
 
 
-print("LOC: " + str(run(allowed_extensions, scripts_folder_path)))
+print("LOC: " + str(run(scripts_folder_path)))
 input("Press enter to exit...")
 
 
